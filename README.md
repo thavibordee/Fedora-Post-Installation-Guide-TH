@@ -64,7 +64,7 @@ sudo dnf check-update</pre>
 <b>ทางเลือกที่ 1 - ติดตั้งแบบจัดเต็ม</b> ผู้ใช้จะสามารถเข้าถึงได้ทุก ๆ อย่าง (รวมถึงแอปฯ ที่ทางผู้พัฒนาเลิกพัฒนาอย่างเป็นทางการด้วยนะครับ)
 <pre>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</pre>
 <b>ทางเลือกที่ 2 - ติดตั้งได้เฉพาะแอปฯ ที่ผ่านการตรวจสอบ และรับรองแล้วเท่านั้น</b> เฉพาะแอปฯ ที่ใช้ได้จริง โดยยังอยู่ในความดูแลของทางผู้พัฒนา
-<pre>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</pre>
+<pre>flatpak remote-add --if-not-exists --subset=verified flathub https://flathub.org/repo/flathub.flatpakrepo</pre>
 <b>ทางเลือกที่ 3 - ติดตั้งได้เฉพาะแอปฯ ที่ฟรี และเป็นโอเพ่นซอร์สเท่านั้น</b> เฉพาะแอปฯ ฟรีที่เป็นโอเพ่นซอร์สเท่านั้น
 <pre>flatpak remote-add --if-not-exists --subset=floss flathub https://flathub.org/repo/flathub.flatpakrepo</pre>
 <b>ทางเลือกที่ 4 - ติดตั้งได้ทั้งแอปฯ ที่ผ่านการรับรอง และแอปฯ ฟรีที่เป็นโอเพ่นซอร์ส</b> เป็นทางเลือกที่รวมทั้งแบบที่ 2 และ 3 เข้าไว้ด้วยกัน
