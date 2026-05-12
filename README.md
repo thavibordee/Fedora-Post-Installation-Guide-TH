@@ -166,3 +166,15 @@ sudo dnf autoremove -y</pre>
 <hr></hr>
 <p></p>
 😁 <b>สุดท้ายนี้ผมหวังเป็นอย่างยิ่งว่าไกด์นี้ จะเป็นประโยชน์ไม่มากก็น้อย สำหรับเพื่อน ๆ พี่ ๆ น้อง ๆ ทุกท่านนะครับ</b> ซึ่งผมคิดว่าน่าจะครอบคลุมการตั้งค่า และติดตั้งแพคเกจต่าง ๆ ที่จำเป็นหลังการติดตั้ง Fedora แล้ว ส่วนที่นอกเหนือจากนี้จะเป็นการติดตั้งในแต่ละด้านตามการใช้งานของผู้ใช้แต่ละคนนะครับ เช่น สายเกมเมอร์ ก็อาจจะติดตั้ง Steam, Lutris หรือถ้าสายโปรแกรมเมอร์ ก็อาจจะติดตั้ง VS Code, VS Codium เพิ่ม เป็นต้น
+<hr></hr>
+<p></p>
+<pre>sudo systemctl stop packagekit</pre>
+<p></p>
+<pre>sudo tee /etc/yum.repos.d/google-chrome.repo <<EOF
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+enabled=1
+gpgcheck=1
+gpgkey=https://dl.google.com/linux/linux_signing_key.pub
+EOF</pre>
